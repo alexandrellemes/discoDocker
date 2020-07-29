@@ -1,0 +1,100 @@
+.
+├── apache
+│   ├── conf
+│   │   ├── 000-default.conf
+│   │   └── pss.local.conf
+│   └── projetos
+│       ├── info.php
+│       ├── mysqltest.php
+│       ├── oracletest.php
+│       ├── phpmemcachedadmin
+│       │   ├── commands.php
+│       │   ├── composer.json
+│       │   ├── Config
+│       │   │   ├── Memcache.php
+│       │   │   └── Memcache.sample.php
+│       │   ├── configure.php
+│       │   ├── _gitignore
+│       │   ├── index.php
+│       │   ├── Library
+│       │   │   ├── Bootstrap.php
+│       │   │   ├── Command
+│       │   │   │   ├── Factory.php
+│       │   │   │   ├── Interface.php
+│       │   │   │   ├── Memcached.php
+│       │   │   │   ├── Memcache.php
+│       │   │   │   └── Server.php
+│       │   │   ├── Configuration
+│       │   │   │   └── Loader.php
+│       │   │   ├── Data
+│       │   │   │   ├── Analysis.php
+│       │   │   │   ├── Error.php
+│       │   │   │   └── Version.php
+│       │   │   └── HTML
+│       │   │       └── Components.php
+│       │   ├── LICENSE
+│       │   ├── Public
+│       │   │   ├── Scripts
+│       │   │   │   ├── Highcharts
+│       │   │   │   │   ├── highcharts.js
+│       │   │   │   │   └── standalone-framework.js
+│       │   │   │   └── script.js
+│       │   │   └── Styles
+│       │   │       └── Style.css
+│       │   ├── README.md
+│       │   ├── spam.php
+│       │   ├── stats.php
+│       │   ├── Temp
+│       │   │   ├── latest
+│       │   │   └── _version
+│       │   └── View
+│       │       ├── Commands
+│       │       │   └── Commands.phtml
+│       │       ├── Configure
+│       │       │   └── Configure.phtml
+│       │       ├── Footer.phtml
+│       │       ├── Header.phtml
+│       │       ├── LiveStats
+│       │       │   ├── Frame.phtml
+│       │       │   └── Stats.phtml
+│       │       └── Stats
+│       │           ├── Error.phtml
+│       │           ├── Items.phtml
+│       │           ├── Slabs.phtml
+│       │           └── Stats.phtml
+│       └── postgrestest.php
+├── discoDocker-tree.txt
+├── docker
+│   ├── docker-compose.yml
+│   ├── .env
+│   ├── files
+│   │   └── php-apache
+│   │       ├── composer.phar
+│   │       ├── Dockerfile
+│   │       ├── oci8.ini
+│   │       ├── oracle
+│   │       │   ├── instantclient-basic-linux.x64-12.2.0.1.0.zip
+│   │       │   ├── instantclient-basiclite-linux.x64-12.2.0.1.0.zip
+│   │       │   ├── instantclient-sdk-linux.x64-12.2.0.1.0.zip
+│   │       │   ├── instantclient-sqlplus-linux.x64-12.2.0.1.0.zip
+│   │       │   ├── oracle-instantclient12.1-basic_12.1.0.2.0-2_amd64.deb
+│   │       │   ├── oracle-instantclient12.1-devel_12.1.0.2.0-2_amd64.deb
+│   │       │   └── oracle-instantclient12.1-sqlplus_12.1.0.2.0-2_amd64.deb
+│   │       ├── tnsnames.ora
+│   │       ├── uploadprogress.ini
+│   │       └── xdebug.ini
+│   ├── .idea
+│   │   ├── docker.iml
+│   │   ├── misc.xml
+│   │   ├── modules.xml
+│   │   ├── vcs.xml
+│   │   └── workspace.xml
+│   ├── install-docker-compose.sh
+│   ├── install-docker-linuxmint.sh
+│   ├── install-docker.sh
+│   ├── run.sh
+│   ├── volume-backup.sh
+│   └── volume-restore.sh
+└── README.md
+
+25 directories, 72 files

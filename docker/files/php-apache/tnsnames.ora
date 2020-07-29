@@ -1,0 +1,9 @@
+dbdes =
+(DESCRIPTION =
+  (ADDRESS_LIST =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = exa01-scan7.intra.goias.gov.br)(PORT = 1521)
+   )
+  (CONNECT_DATA =
+    (SERVICE_NAME = dbdes)
+   )
+ )
