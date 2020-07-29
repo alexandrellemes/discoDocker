@@ -4,6 +4,20 @@
 
 * Assim temos a pasta no $HOME (Home do Usuário), chamada discoDocker.
 
+* Projeto baseado no docker/docker-compose
+
+* Containers:
+  * phpmyadmin
+  * php-apache
+  * mysqldb
+  * memcached
+  * portainer
+  * maillocal
+  * oracledb
+  * postgres
+  * sonarqube
+  
+
 * Dentro dela temos: 
   - apache
   - docker
