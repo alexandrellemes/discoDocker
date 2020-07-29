@@ -48,5 +48,5 @@
 
 * Nessa pasta que colocaremos os projetos...
 
-###São ferramentas úteis para testes rápidos e para validar o ambiente.
+São ferramentas úteis para testes rápidos e para validar o ambiente.
 
