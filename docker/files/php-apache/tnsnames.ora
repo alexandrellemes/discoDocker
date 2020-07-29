@@ -1,9 +1,9 @@
-dbdes =
+dbserver =
 (DESCRIPTION =
   (ADDRESS_LIST =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = exa01-scan7.intra.goias.gov.br)(PORT = 1521)
+    (ADDRESS = (PROTOCOL = TCP)(HOST = host.meu.servidor.oracle)(PORT = 1521)
    )
   (CONNECT_DATA =
-    (SERVICE_NAME = dbdes)
+    (SERVICE_NAME = dbserver)
    )
  )

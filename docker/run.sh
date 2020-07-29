@@ -17,7 +17,7 @@ sudo docker-compose exec php-apache sh -c "a2ensite pss.local"
 
 echo 'Permissoes em pastas...'
 
-# PSS
+# PSS - Sistema Exemplo.
 echo 'PSS - pss/proxy/var/vendor...'
 sudo docker-compose exec php-apache sh -c "chmod 777 /var/www/html/pss/proxy -R"
 sudo docker-compose exec php-apache sh -c "chmod 777 /var/www/html/pss/var -R"
