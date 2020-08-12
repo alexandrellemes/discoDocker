@@ -216,6 +216,9 @@ RUN find /etc/php -name php.ini -exec sed -i -e 's/;session.save_path = "\/var\/
 RUN find /etc/php -name php.ini -exec sed -i -e 's/display_errors = Off/display_errors = On/g' {} \;
 RUN find /etc/php -name php.ini -exec sed -i -e 's/display_startup_errors = Off/display_startup_errors = On/g' {} \;
 
+# Define o TIMEZONE para America/Sao_Paulo
+RUN find /etc/php -name php.ini -exec sed -i -e 's/;date.timezone =/date.timezone = America\/Sao_Paulo/g' {} \;
+
 # Define a versão a ser utilizada.
 #RUN update-alternatives --set php /usr/bin/php${PHP_VERSION}
 
