@@ -78,23 +78,44 @@ services:
     networks:
       - code-network
 
-
+  # SMTP Server - desenvolvimento. (MailHog)
   maillocal:
     container_name: maillocal
-    image: djfarrelly/maildev
     restart: always
-    hostname: maillocal.local
-    command: node bin/maildev --web 80 --smtp 25
-    environment:
-      - HTTP_PORT=yes
-      - SMTP_PORT=yes
-      - VERBOSE=yes
-      - NODE_ENV=production
+    build:
+      context: ./files/mailhog
+      args:
+        URL_PROXY: ${URL_PROXY}
+        PHP_VERSION: ${PHP_VERSION}
+        HOME: ${HOME_DIR}
+    volumes:
+    # - ${HOME_DIR}/discoDocker/docker/mail/:/var/mail/
+      - /tmp:/tmp
     ports:
-      - 1080:80
-      - 1025:25
+      - 1025:1025
+      - 1080:8025
     networks:
       - code-network
+
+# SMTP Server - desenvolvimento. (MailDev)
+#  maillocal:
+#    container_name: maillocal
+#    image: maildev/maildev
+#    restart: always
+#    hostname: maillocal.local
+#    command: node bin/maildev --web 80 --smtp 25
+#    environment:
+#      - HTTP_PORT=yes
+#      - SMTP_PORT=yes
+#      - VERBOSE=yes
+#      - NODE_ENV=production
+#    ports:
+#      - 1025:25
+#      - 1080:80
+#    networks:
+#      - code-network
+
+
 
   oracledb:
     container_name: oracledb
